@@ -1,6 +1,8 @@
 import App from './App.svelte';
+import defineElements from './defineElements';
 import style from './main.module.sass';
 
+defineElements();
 const appContainer = document.createElement('div');
 appContainer.classList.add(style.appContainer);
 

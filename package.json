@@ -8,6 +8,7 @@
     "validate": "svelte-check"
   },
   "devDependencies": {
+    "@barusu/rollup-plugin-copy": "^0.0.45",
     "@rollup/plugin-commonjs": "^17.0.0",
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^11.0.0",
@@ -39,6 +40,7 @@
     "typescript": "^4.0.0"
   },
   "dependencies": {
+    "@shoelace-style/shoelace": "^2.0.0-beta.26",
     "sirv-cli": "^1.0.0",
     "svelte-feather-icons": "^3.3.0",
     "tailwindcss": "^2.0.2"
