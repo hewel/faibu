@@ -1,0 +1,24 @@
+{
+  "name": "faibu",
+  "description": "A tool that can export download links from 115 to Aria2",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "faibu",
+    "default_icon": {
+      "16": "/images/icon@16.png",
+      "32": "/images/icon@32.png",
+      "48": "/images/icon@48.png",
+      "128": "/images/icon@128.png"
+    }
+  },
+  "icons": {
+    "16": "/images/icon@16.png",
+    "32": "/images/icon@32.png",
+    "48": "/images/icon@48.png",
+    "128": "/images/icon@128.png"
+  },
+  "host_permissions": [
+    "*://*.115.com/*"
+  ]
+}

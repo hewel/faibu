@@ -1,21 +1,10 @@
-import App from './App.svelte';
-import defineElements from './defineElements';
-import style from './main.module.sass';
+import 'carbon-components-svelte/css/all.css';
+import 'tailwindcss/tailwind.css';
 
-defineElements();
-const appContainer = document.createElement('div');
-appContainer.classList.add(style.appContainer);
+import App from './App.svelte';
 
 const app = new App({
-  target: appContainer,
-  props: {
-    name: 'world',
-  },
+  target: document.body,
 });
-window.addEventListener('load', () => {
-  document.getElementsByClassName('container-ceiling')[0]?.appendChild(appContainer);
-  console.log('down!');
-  const iframe = document.querySelector('iframe[rel="wangpan"]');
-  console.dir(iframe);
-});
+
 export default app;

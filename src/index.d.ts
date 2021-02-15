@@ -12,3 +12,5 @@ declare module '*.sass' {
 declare module '*.scss' {
   export default styles;
 }
+
+declare const __DEV__: boolean;

@@ -1,16 +1,25 @@
-<script lang="ts">
-  import { fade } from 'svelte/transition';
+<script>
+  import { Accordion, TileGroup } from 'carbon-components-svelte';
+  import { DataBase32 } from 'carbon-icons-svelte';
+  import MenuItem from './MenuItem';
 
-  export let menuContainerEl: HTMLDivElement;
+  let list = new Array(10).fill('');
 </script>
 
-<div class="menu-container" bind:this={menuContainerEl} transition:fade={{ duration: 200 }}>
-  <span>menu</span>
+<div class="menu-container">
+  <Accordion>
+    <MenuItem expandable>
+      <span slot="title">Title</span>
+      <TileGroup>
+        <MenuItem>Title1</MenuItem>
+      </TileGroup>
+    </MenuItem>
+  </Accordion>
 </div>
 
 <style lang="sass">
   .menu-container
-    width: 246px
-    top: 56px
-    @apply absolute right-1 bg-white px-4 py-2 rounded-sm border-solid border border-gray-300 border-opacity-60 shadow-sm
+    width: 256px
+    height: 512px
+    max-height: 480px
 </style>
