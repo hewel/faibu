@@ -1,0 +1,19 @@
+.bx--accordion__item
+  border-top: none
+.bx--accordion__heading
+  border-bottom: 1px solid var(--cds-ui-03,#e0e0e0)
+
+@responsive
+  .bx--accordion__item--active .bx--accordion__content
+    @apply pr-0 pt-0 pb-0 pl-0
+
+.bx--accordion__content
+  .bx--tile
+    padding-left: 1.5rem
+    padding-right: .5rem
+
+.bx--tile
+  min-height: 2.5rem
+  padding-top: .625rem
+  padding-bottom: .625rem
+  border-bottom: 1px solid var(--cds-ui-03,#e0e0e0)
